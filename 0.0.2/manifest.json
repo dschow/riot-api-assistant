@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Riot API Assistant",
+  "version": "0.0.2",
+  
+  "description": "Riot API Assistant provides tools to improve developer's experience with the Riot API Development Portal.",
+  "icons" : {
+    "48": "img/icon48.png"
+  },
+
+  "browser_action": {
+    "default_title": "Riot API Assistant",
+    "default_icon": "img/icon19.png",
+    "default_popup": "btn/popup.html"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "minimum_chrome_version": "23",
+  
+  "permissions": [
+	"storage",
+    "webRequest",
+	"webRequestBlocking",
+    "*://*.api.pvp.net/"
+  ]
+}

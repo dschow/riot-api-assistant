@@ -1,0 +1,132 @@
+body {
+  background-color: #fff;
+  margin: 0px;
+  min-width: 400px;
+  -webkit-user-select:none;
+  user-select:none;
+  cursor:default;
+  overflow-x: hidden;
+}
+
+#set_wrapper{
+	height:30px;
+	width: 100%;
+	background: #fcfcfc;
+	/*background: rgba(250,250,250,.91);*/
+	padding: 10px;
+	z-index: 100;
+	border-bottom: 1px solid #ddd;
+	-webkit-transition:box-shadow .15s ease-out;
+}
+
+#err_wrapper {
+	padding: 10px 5px;
+	padding-bottom: 0;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	color: #cc0000;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#desc_wrapper {
+	padding: 10px;
+	padding-bottom: 0;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	color: #505050;
+	font-size: 12px;
+}
+
+#desc_wrapper span.url {
+	color: #108bd0;
+}
+
+#show_wrapper {
+	width: 100%;
+	padding: 10px;
+	padding-top: 5px;
+	text-align: center;
+	overflow: auto;
+}
+
+#show_desc {
+	float: left;
+	margin-right: 5px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	color: #505050;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+#show_key {
+	float: left;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	color: #979CA0;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+#txtKey {
+	margin-bottom: 1px;
+	padding-left: 4px;
+	color:#333;
+	letter-spacing:1px;
+	width: 280px;
+	height: 24px;
+	font-size: 15px;
+	font-family: arial;
+	border: 1px solid #bbb;
+	color: #222;
+	text-shadow: 0 1px 1px rgba(255,255,255, 1);
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255, .5),
+		inset 0 1px 0 rgba(255,255,255, .5);
+	text-decoration: none;
+	outline:0;
+}
+
+#btnSetKey {
+	margin-left: 5px;
+	padding: 0;
+	font-weight:bold;
+	cursor:pointer;
+	color:#333;
+	letter-spacing:1px;
+	width: 80px;
+	height: 28px;
+	line-height:26px;
+	font-size: 15px;
+	font-family: arial;
+	background: #eee 
+		-webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0,0,0, 0)),
+			to(rgba(0,0,0, .1))
+		);
+	border: 1px solid #bbb;
+	color: #222;
+	text-shadow: 0 1px 1px rgba(255,255,255, 1);
+	-webkit-border-radius: 4px;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255,255,255, .5),
+		inset 0 1px 0 rgba(255,255,255, .5);
+	text-align: center;
+	text-decoration: none;
+	outline:0;
+}
+
+#btnSetKey:hover {
+	background: #eee -webkit-gradient( 
+		linear, left top, left bottom, 
+		from(rgba(0,0,0, 0)), 
+		to(rgba(0,0,0, .15)) );
+}
+
+#btnSetKey:active {
+	background: #eee -webkit-gradient( 
+		linear, left top, left bottom, 
+		from(rgba(0,0,0, .20)),
+		to(rgba(0,0,0, .15)) );
+}
